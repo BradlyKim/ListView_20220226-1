@@ -46,8 +46,9 @@ class StudentAdapter(
         txtAddress.text = data.address
 
 
-        val age = 2022 - data.birthYear + 1
-        txtAge.text = "(${age}세)"
+//       StudentData에 추가한 함수 활용 예시
+
+        txtAge.text = "(${ data.getKoreanAge(2022) }세)"
 
 
 //        반영된 채로 결과로 나가게
